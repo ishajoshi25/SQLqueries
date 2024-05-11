@@ -87,7 +87,7 @@ VALUES
 
 SELECT status FROM samplesql.orders;
 SELECT total FROM samplesql.orders;
-UPDATE `samplesql`.`users` SET `city` = 'Bhopal', `state` = 'MP' WHERE (`user_id` = 'U1');
-UPDATE `samplesql`.`address` SET `city` = 'lucknow' WHERE (`pincode` = '452001');
-UPDATE `samplesql`.`products` SET `product_description` = 'Anddroid Mobile Phone' WHERE (`product_id` = 'P1');
+UPDATE samplesql.users SET city = 'Bhopal', state = 'MP' WHERE (user_id = 'U1');
+UPDATE samplesql.address SET city = 'lucknow' WHERE (pincode = '452001');
+UPDATE samplesql.products SET product_description = 'Anddroid Mobile Phone' WHERE (product_id = 'P1');
 SELECT * FROM samplesql.products where product_returnable='Yes';
