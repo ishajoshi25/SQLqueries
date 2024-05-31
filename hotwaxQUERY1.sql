@@ -85,9 +85,9 @@ VALUES
 ('O2', 'P2', 'U2', 7000, '2024-03-04', 'Pending'),
 ('O3', 'P1', 'U1', 25000, '2024-03-04', 'Shipped');
 
-SELECT status FROM samplesql.orders;
-SELECT total FROM samplesql.orders;
-UPDATE samplesql.users SET city = 'Bhopal', state = 'MP' WHERE (user_id = 'U1');
-UPDATE samplesql.address SET city = 'lucknow' WHERE (pincode = '452001');
-UPDATE samplesql.products SET product_description = 'Anddroid Mobile Phone' WHERE (product_id = 'P1');
-SELECT * FROM samplesql.products where product_returnable='Yes';
+SELECT status FROM samplesql.orders where order_id = 'O1';
+SELECT total FROM samplesql.orders where order_id = 'O1';
+UPDATE samplesql.users SET city = 'Bhopal', state = 'MP' WHERE user_id = 'U1';
+UPDATE samplesql.address SET city = 'lucknow' WHERE pincode = '452001';
+UPDATE samplesql.products SET product_description = 'Shoes' WHERE product_id = 'P2';
+SELECT * FROM samplesql.products where product_returnable = 'Yes';
